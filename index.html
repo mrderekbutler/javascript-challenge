@@ -25,29 +25,115 @@
       <h1>UFO Sightings</h1>
       <p>The Truth is Out There</p>
     </div>
-    <div class="container">
-      <div class="row margin-top-50">
+    <hr>
+    <div class="container-fluid">
+      <div class="row" >
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">Date Search</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="m/d/ccyy">
+                        <button id="filter-btn" type="submit" class="btn btn-default">Filter Date</button>
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-2">          
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">City Search</div>
+              <div class="panel-body"> 
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="city">Enter a City</label>
+                        <input class="form-control" id="city" type="text" placeholder="city">
+                        <button id="filter-city-btn" type="submit" class="btn btn-default">Filter City</button>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">State Search</div>
+              <div class="panel-body"> 
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="state">Enter a State</label>
+                        <input class="form-control" id="state" type="text" placeholder="state">
+                        <button id="filter-state-btn" type="submit" class="btn btn-default">Filter State</button>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Country Search</div>
+              <div class="panel-body"> 
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="country">Enter a Country</label>
+                        <input class="form-control" id="country" type="text" placeholder="country">
+                        <button id="filter-country-btn" type="submit" class="btn btn-default">Filter Country</button>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Shape Search</div>
+              <div class="panel-body"> 
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="shape">Enter a Shape</label>
+                        <input class="form-control" id="shape" type="text" placeholder="shape">
+                        <button id="filter-shape-btn" type="submit" class="btn btn-default">Filter Shape</button>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid">  
+      <div class="row" > 
+        <div class="col-md-12">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead>
